@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" type="img/png" href="logo.jpg">
+</head>
+<body>
+    <h1>Calculator</h1><br>
+        <div class="div1">
+            <input type="text" class="div2" id="demo">
+            <div style="margin-left:12px">
+                <div><button onclick="fun1()" id="btn1" value="1">1</button>
+                <button onclick="fun2()" id="btn2" value="2">2</button>
+                <button onclick="fun3()" id="btn3" value="3">3</button>
+                <button onclick="add()" id="btnplus" value="+">+</button>
+                <button onclick="fun4()" id="btn4" value="4">4</button>
+                <button onclick="fun5()" id="btn5" value="5">5</button>
+                <button onclick="fun6()" id="btn6" value="6">6</button>
+                <button onclick="minus()" id="btn_min" value="-">-</button>
+                <button onclick="fun7()" id="btn7" value="7">7</button>
+                <button onclick="fun8()" id="btn8" value="8">8</button>
+                <button onclick="fun9()" id="btn9" value="9">9</button>
+                <button onclick="multiplier()" id="btn_mul" value="*">*</button>
+                <button onclick="dot()" id="btn_dot" value=".">.</button>
+                <button onclick="fun0()" id="btn0" value="0">0</button>
+                <button onclick="equal()" id="btn_equ" value="=">=</button>
+                <button onclick="division()" id="btn_div" value="/">/</button>
+            </div>
+        </div>
+        <input type="submit" onclick="reset()" class="clear" value="Clear">
+    <script>
+            var temp=" ";
+            function store(){
+                document.getElementById('demo').value=temp;
+            }
+            //function 1
+            function fun1(){
+                var input1=document.getElementById('btn1').value;
+                temp=temp+input1;
+                store(temp);
+            }
+            //function 2
+            function fun2(){
+                var input2=document.getElementById('btn2').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function 3
+            function fun3(){
+                var input2=document.getElementById('btn3').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function 4
+            function fun4(){
+                var input2=document.getElementById('btn4').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function 5
+            function fun5(){
+                var input2=document.getElementById('btn5').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function 6
+            function fun6(){
+                var input2=document.getElementById('btn6').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function 7
+            function fun7(){
+                var input2=document.getElementById('btn7').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function 8
+            function fun8(){
+                var input2=document.getElementById('btn8').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function 9
+            function fun9(){
+                var input2=document.getElementById('btn9').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function 0
+            function fun0(){
+                var input2=document.getElementById('btn0').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function add
+            function add(){
+                var input2=document.getElementById('btnplus').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function min
+            function minus(){
+                var input2=document.getElementById('btn_min').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function mult
+            function multiplier(){
+                var input2=document.getElementById('btn_mul').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function div
+            function division(){
+                var input2=document.getElementById('btn_div').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function dot
+            function dot(){
+                var input2=document.getElementById('btn_dot').value;
+                temp=temp+input2;
+                store(temp);
+            }
+            //function equal
+            function equal(){
+                n=temp;
+                if(temp==+7){
+                    alert("keerthana");
+                }else{
+                    n=eval(temp);
+                    document.getElementById('demo').value=n;
+                }
+            }
+            //function clear
+            function reset() {
+                document.getElementById('demo').value = ''; 
+                temp=" ";
+            }
+    </script>
+</body>
+</html>
